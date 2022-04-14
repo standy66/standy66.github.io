@@ -2,6 +2,7 @@ baseURL: https://standy.me/
 languageCode: en-us
 title: Andrew's Personal site
 theme: PaperMod
+googleAnalytics: G-C5RG2DYTWS
 params:
   profileMode:
     enabled: true
