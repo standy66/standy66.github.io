@@ -1,2 +1,11 @@
 .hugo_build.lock
 /public/
+
+# TeX related
+*.log
+*.synctex.gz
+*.run.xml
+*.out
+*.log
+*.bcf
+*.aux
