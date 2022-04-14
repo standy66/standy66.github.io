@@ -1,0 +1,36 @@
+baseURL: https://standy.me/
+languageCode: en-us
+title: Andrew's Personal site
+theme: PaperMod
+params:
+  profileMode:
+    enabled: true
+    title: Hi!
+      
+    subtitle: |
+      My name is **Andrew Stepanov**.
+
+      I am an engineering manager with *first-hand experience* in ML / algorithms 🙌 🧠 💻
+
+      This is my personal site. It is currently under construdttion.
+
+      Feel free to contact me by any means below.
+    imageUrl: "my_avatar.jpeg" # optional
+    imageTitle: "This is what I look like"
+    imageWidth: 160 # custom size
+    imageHeight: 160 # custom size
+    buttons:
+      - name: CV (outdated)
+        url: "https://standy.me/cv/cv.pdf"
+  socialIcons:
+    - name: email
+      url: mailto:hi@standy.me
+    - name: telegram
+      url: https://t.me/standy
+    - name: github
+      url: https://github.com/standy66
+    - name: instagram
+      url: https://instagram.com/astepanov95
+    - name: linkedin
+      url: https://linkedin.com/in/standy66
+
