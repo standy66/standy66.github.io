@@ -1,0 +1,172 @@
+:root {
+    --nav-width: 1024px;
+    --main-width: 900px;
+    --gap: 36px;
+}
+
+.about-page {
+    margin-top: 0em;
+}
+
+/* .about-page .summary h2 {
+    margin-bottom: 1em;
+} */
+
+.about-page aside {
+    float: right;
+    margin-left: 2em;
+    margin-top: 3.5em;
+    width: 25%;
+}
+
+@media only screen and (max-width: 768px) {
+    .about-page aside {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-left: 0em;
+    }
+    .about-page .main-content li {
+        margin-left: 1em;
+    }
+    :root {
+        --gap: 24px;
+    }
+    .about-page aside .contact-list {
+        margin-left: 0em !important;
+    }
+}
+
+@media print {
+    :root {
+        --theme: rgb(255, 255, 255);
+        --entry: rgb(255, 255, 255);
+        --primary: rgb(30, 30, 30);
+        --secondary: rgb(108, 108, 108);
+        --tertiary: rgb(214, 214, 214);
+        --content: rgb(31, 31, 31);
+        --hljs-bg: rgb(28, 29, 33);
+        --code-bg: rgb(245, 245, 245);
+        --border: rgb(238, 238, 238);
+    }
+    header {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+    #print-me {
+        display: none;
+    }
+    .about-page {
+        margin-top: 1em;
+    }
+    nav.jump-to {
+        display: none;
+    }
+}
+
+.about-page aside section {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.about-page aside img {
+    border-radius: 50%;
+    width: 10em;
+    pointer-events: none;
+    margin-bottom: 2em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* .about-page aside h3 {
+    margin-bottom: 0.5em;
+} */
+
+.about-page aside a .at {
+    display: inline;
+    color: var(--secondary);
+}
+
+.about-page aside a:hover .at {
+    display: inline;
+    color: var(--primary);
+}
+
+.about-page aside .contact-list {
+    list-style: none;
+    margin-left: -1.5em;
+}
+
+.about-page aside .contact-list svg {
+    width: 1em;
+    height: 1em;
+    margin-right: 0.5em;
+    margin-bottom: -0.0625em;
+}
+
+.about-page aside .skills-list li {
+    display: inline-block;
+    border: 1px solid dimgray;
+    border-radius: var(--radius);
+    padding: 0em 0.25em 0em 0.25em;
+    margin-top: 0.2em;
+}
+
+.about-page .jump-to {
+    margin-top: 1.5em;
+    margin-bottom: 0em;
+}
+
+.about-page .time-period {
+    color: var(--secondary);
+    /* margin-top: -0.5em;
+    margin-bottom: 0.5em; */
+}
+
+
+/* .about-page section {
+    margin-bottom: 2em;
+} */
+
+.about-page h2 {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.about-page h3 {
+    margin-top: 1.0em;
+    margin-bottom: 0.5em;
+}
+
+.about-page h4,h5,h6 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.about-page p {
+    margin-bottom: 0.5em;
+}
+
+.about-page .links a:hover {
+    color: var(--primary);
+}
+
+.about-page .links a {
+    color: var(--secondary);
+}
+
+.about-page small {
+    font-size: 1em;
+    color: var(--secondary);
+}
+
+.about-page .button-container {
+    margin-top: 4em;
+    margin-bottom: 0em;
+    text-align: center;
+}
+
+::-webkit-scrollbar{ background: var(--theme); }

@@ -1,0 +1,270 @@
+{{- define "main" }}
+<div class="about-page">
+
+<aside>
+    <img src="/my_avatar.jpeg"/>
+    <section>
+    <h3>Contact me</h3>
+    <ul class="contact-list">
+        {{ range .Params.contacts }}
+        <li>{{ partial "svg.html" . }}<a href="{{- .href -}}">{{- .text | safeHTML -}}</a></li>
+        {{ end}}
+    </ul>
+    </section>
+    <section>
+    <h3>Skills</h3>
+    <ul class="skills-list">
+        {{ range .Params.skills }}
+        <li>{{- . -}}</li>
+        {{ end }}
+    </ul>
+    </section>
+</aside>
+
+<div class="main-content">
+
+<section class="summary">
+    <h2>Andrew Stepanov</h2>
+    <p>
+        I am an engineering manager with first-hand experience in the field of machine learning
+        and data analysis, including all stages of the ML pipeline from setting the objective to production.
+        I know how to build and manage teams making services that sustain tens of thousands of
+        requests per second under load running ML-heavy algorithms.
+        Being a person of technical and ACM background, I have a deep understanding of how
+        various aspects of modern ML in production stack up, including cold starting,
+        perf optimization (CPU/GPU), cloud-native architecture and distributed systems,
+        quality monitoring and continuously improving the model, etc.
+    </p>
+    <p>
+        Areas of interest and expertise: machine learning, distributed systems,
+        cloud-native architecture, speech recognition and synthesis,
+        C++ and Golang development, IT process improvement, big data processing.
+    </p>
+</section>
+
+<nav class="links jump-to">
+    Jump to [<a href="#work-experience">Work Experience</a>] [<a href="#education">Education</a>] [<a href="#open-source">Open Source</a>] [<a href="#public-talks">Public Talks</a>] [<a href="#awards">Awards</a>]
+</nav>
+
+<section id="work-experience">
+    <h2>Work Experience 💼</h2>
+    <section>
+        <h3>Tinkoff</h3>
+        <small>You can view recommendations from my peers and superiors on LinkedIn.</small>
+        <ul>
+            <li>
+                <h4>Head of Department, ML Infrastructure and Services</h4>
+                <div class="time-period"><time>Jan 2021</time> - <time>May 2022</time></div>
+                <p>
+                    I manage a team of ~60 people with a primary goal of developing and maintaining a large suite of internal instruments,
+                    infrastructure, and services aimed at reducing time to market and increasing ease of use for machine learning-based workflows
+                    and products at the company. This includes computer vision and document recognition services, speech services, training and
+                    serving infrastructure, confidential computing, etc. As a result, most ML engineers in the company do it via tools developed
+                    in my department and a significant portion of the company's business teams use our ML SaaS solutions in their critical business paths.
+                </p>
+            </li>
+            <li>
+                <h4>Head of Tinkoff VoiceKit</h4>
+                <div class="time-period"><time>Jul 2019</time> - <time>Dec 2020</time></div>
+                <p>
+                    My team and I set out to test if a new SaaS business can be launched based on the voice tech we developed in the years prior.
+                    My direct reports and I were responsible for go-to-market strategy, product offering, engineering management, and sales.
+                    We managed to get 10s of paying enterprise customers and met our projections in the first and second years we operated.
+                    Afterward, we deemed our idea successful and the business part transitioned to the separate IT monetization department.
+                </p>
+            </li>
+            <li>
+                <h4>Lead Data Scientist / Team Lead</h4>
+                <div class="time-period"><time>Jul 2016</time> - <time>Jun 2019</time></div>
+                <p>
+                    I managed a team of a dozen engineers and also took an active part in developing automatic speech recognition and speech synthesis systems
+                    from scratch for one of the largest fintechs in Europe. My team was responsible for all parts of the machine learning cycle - 
+                    from data collection and labeling to production deployment and quality monitoring. The system that we've built now processes tens of
+                    billions of seconds of real-time speech, each month.
+                </p>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h3>Vivid Money</h3>
+        <ul>
+            <li>
+                <h4>Machine Learning Consultant</h4>
+                <div class="time-period"><time>Jun 2020</time> - <time>Dec 2020</time></div>
+                <p>
+                    I consulted one of the biggest German fintechs in applying Machine Learning for customer care and support.
+                    As a result of this work, the company managed to build an in-house team with the required expertise and focus on that particular area.
+                </p>
+            </li>
+        </ul>
+    </section>
+
+</section>
+<section id="education">
+    <h2>Education 🎓</h1>
+    <section>
+        <h3>Moscow Institute of Physics and Technology (MIPT)</h3>
+        <ul>
+            <li>
+                <h4>Master of Science, Applied mathematics and Computer Science</h4>
+                <div class="time-period"><time>Sep 2017</time> - <time>Aug 2019</time></div>
+                <p>
+                    Specialized in data analysis and machine learning. The thesis topic is <em>Sequence discriminative training and structured prediction for end-to-end speech recognition</em>.
+                <br>
+                    GPA: 4.6 / 5
+                </p>
+            </li>
+            <li>
+                <h4>Bachelor of Science, magna cum laude, Applied mathematics and Computer Science</h4>
+                <div class="time-period"><time>Sep 2013</time> - <time>Aug 2017</time></div>
+                <p>
+                    Specialized in computer science and machine learning.
+                    The thesis topic is <em>Character-level RNNLM for morphologically complex languages in speech recognition.</em>
+                <br>
+                    GPA: 4.9 / 5
+                </p>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h3>Yandex School of Data Analysis</h3>
+        <ul>
+            <li>
+                <h4>MSc-equivalent degree, CS department</h4>
+                <div class="time-period"><time>Sep 2017</time> - <time>Aug 2019</time></div>
+                <p>
+                    The studies were mostly independent from the main ones in MIPT. During my studies, I took a deep dive into reinforcement learning, applied statistics, distributed systems and concurrency, computer vision, and machine translation.
+                </p>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h3>Summer Computer Science Camp</h3>
+        <ul>
+            <li>
+                <h4>Student, A' stream</h4>
+                <div class="time-period"><time>Aug 2012</time></div>
+                <p>
+                    I took this summer camp to better prepare for upcoming competitive programming contests.
+                    I intensively studied advanced algorithms and data structures during the 3 weeks of the summer of 2012.
+                    As a result of this study, I won the regional stage and was awarded a prize at the national stage
+                    of the Russian Informatics Olympiad (ROI) for high-school students.
+                </p>
+            </li>
+            <li>
+                <h4>Student, B stream</h4>
+                <div class="time-period"><time>Aug 2011</time></div>
+                <p>
+                    I first took Summer CS Camp to hone my skills in algorithms and data structures during the summer of 2011.
+                </p>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h3>Samara Lyceum of IT</h3>
+        <ul>
+            <li>
+                <h4>Student, magna cum laude</h4>
+                <div class="time-period"><time>Sep 2002</time> - <time>Jul 2013</time></div>
+                <p>
+                    The lyceum focuses on the in-depth study of information technology. I started programming in 5th grade.
+                    During my high-school years, I specialized in physics and mathematics.
+                    <br>
+                    High-school GPA: 5.0/5
+                </p>
+            </li>
+        </ul>
+    </section>
+</section>
+
+<section class="links" id="open-source">
+    <h2>Open Source Projects 🐙</h2>
+    <ul>
+        <li>
+            <b>python-trio/purerpc</b> &mdash; I created this library as a PoC pure-Python implementation of gRPC protocol on top of different event-loops.
+            We used it in production at Tinkoff for some time but eventually decided to move our microservices codebase to Golang.
+            But the project took off in the community and is now a part of the larger python-trio ecosystem.
+            (<a href="https://github.com/python-trio/purerpc">Repository</a>)
+        </li>
+        <li>
+            <b>The PyPy project</b> &mdash; reporting perf degradations, fixing configurations and segfaults on MacOS, adding missing attributes
+            (<a href="https://foss.heptapod.net/pypy/pypy/-/issues?scope=all&state=all&search=standy">Issues</a>, 
+            <a href="https://foss.heptapod.net/pypy/pypy/-/merge_requests?scope=all&state=all&search=standy">MRs</a>)
+        </li>
+        <li>
+            <b>python-hyper/h2</b> &mdash; reporting HTTP/2.0 conformance issues, fixing perf degradations, async examples 
+            (<a href="https://github.com/python-hyper/h2/issues?q=author%3Astandy66">Contributions</a>)
+        </li>
+        <li>
+            <b>srvk/eesen</b> &mdash; build steps contributions 
+            (<a href="https://github.com/srvk/eesen/issues?q=author%3Astandy66">MRs</a>)
+        </li>
+        <li>
+            <b>tensorflow/tensorflow</b> &mdash; minor contributions, mostly issues 
+            (<a href="https://github.com/tensorflow/tensorflow/issues?q=author%3Astandy66">Contributions</a>)
+        </li>
+    </ul>
+</section>
+
+<section class="links" id="public-talks">
+    <h2>Public Talks and Lectures 🎙</h2>
+    <ul>
+        <li><b>Tinkoff.AI Speech Meetup, 2021</b> &mdash; I organized and moderated a live event that we've held on Youtube. We talked about the inner workings of production-grade ASR (Automatic Speech Recognition) and TTS (Text-to-speech) systems. (<a href="https://www.youtube.com/watch?v=N6DnPC0rwIo">Youtube</a>, in Russian)</li>
+        <li><b>ConversationsAI, 2019</b> &mdash; I talked about how we had built a voice assistant for the largest Russian fintech. (<a href="https://www.youtube.com/watch?v=M6Rv2enR8ek">Youtube</a>, in Russian)</li>
+        <li><b>PyCon Russia, 2017</b> &mdash; workshop on how to build a simple ASR system from scratch using Python. (<a href="https://pycon.ru/arkhiv2017">Conf site</a>, <a href="https://github.com/standy66/pycon-speech-recognition-2017">repo</a>)</li>
+        <li><b>Tinkoff Fintech School, 2016-2017</b> &mdash; I gave lectures on Deep Learning and Automatic Speech Recognition.</li>
+    </ul>
+</section>
+<section class="links" id="awards">
+    <h2>Awards & Certificates 🏆</h2>
+    <section>
+        <h3>IELTS Academic, 2022</h3>
+        TDB. <small>PDF or paper certificate available upon request.</small>
+    </section>
+    <section>
+        <h3>TOEFL iBT, 2017</h3>
+        Score: 105. <small>PDF or paper certificate available upon request.</small>
+    </section>
+    <section>
+        <h3>Select competitive programming results</h3>
+        <ul>
+            <li>ACM ICPC Moscow Subregional 2013 - 22nd place (<a href="http://neerc.ifmo.ru/archive/2013/moscow/standings.html">Standings</a>)</li>
+            <li>ROI 2012 - Prize winner (<a href="http://neerc.ifmo.ru/school/archive/2012-2013/ru-olymp-roi-2013-standings.html">Standings</a>)</li>
+        </ul>
+    </section>
+</section>
+
+</div>
+
+<div class="button-container">
+<button id="print-me" type="button" class="button"><span class="button-inner">Print this page</span></button>
+
+<script>
+    document.getElementById("print-me").onclick = function() {
+        let dark = document.body.className.includes("dark");
+        if (dark) {
+            document.body.classList.remove('dark');
+        }
+        window.print();
+        if (dark) {
+            document.body.classList.add('dark');
+        }
+    }
+</script>
+</div>
+
+</div>
+
+
+
+<script>
+    window.onload = function() {
+        for (var links = document.links, i = 0, a; a = links[i]; i++) {
+            if (a.host !== location.host) {
+                    a.target = '_blank';
+            }
+        }
+    }
+</script>
+
+{{- end }}{{/* end main */}}
