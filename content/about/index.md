@@ -9,7 +9,7 @@ menu: main
 contacts:
 - icon:
     fa: fa-earth-europe
-  text: Cambridge, 🇬🇧
+  text: 'Cambridge, 🇬🇧'
 - icon:
     name: email
   href: mailto:hi@standy.me
