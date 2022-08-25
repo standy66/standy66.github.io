@@ -7,7 +7,12 @@
     <h3>Contact me</h3>
     <ul class="contact-list">
         {{ range .Params.contacts }}
-        <li>{{ partial "svg.html" . }}<a href="{{- .href -}}">{{- .text | safeHTML -}}</a></li>
+        <li>
+            {{ if isset .icon "name" }}{{ partial "svg.html" .icon }}{{ end }}
+            {{ if isset .icon "fa" }}<i class="fa-solid {{ .icon.fa }}"></i>{{ end }}
+            {{ if isset . "href" }}<a href="{{- .href -}}">{{ end }}
+            {{- .text | safeHTML -}}
+            {{ if isset . "href" }}</a>{{ end }}</li>
         {{ end}}
     </ul>
     </section>
@@ -56,7 +61,7 @@
                 <h4>Head of Department, ML Infrastructure and Services</h4>
                 <div class="time-period"><time>Jan 2021</time> - <time>Present</time></div>
                 <p>
-                    I manage a team of ~60 people with a primary goal of developing and maintaining a large suite of internal instruments,
+                    I manage a team of ~70 people with a primary goal of developing and maintaining a large suite of internal instruments,
                     infrastructure, and services aimed at reducing time to market and increasing ease of use for machine learning-based workflows
                     and products at the company. This includes computer vision and document recognition services, speech services, training and
                     serving infrastructure, confidential computing, etc. As a result, most ML engineers in the company do it via tools developed

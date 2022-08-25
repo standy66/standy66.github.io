@@ -7,16 +7,23 @@ author: ["Me", "You"]
 layout: about
 menu: main
 contacts:
-- name: email
+- icon:
+    fa: fa-earth-europe
+  text: Cambridge, 🇬🇧
+- icon:
+    name: email
   href: mailto:hi@standy.me
   text: hi<div class="at">@standy.me</div>
-- name: linkedin
+- icon:
+    name: linkedin
   href: https://linkedin.com/in/standy66
   text: '<div class="at">@</div>standy66'
-- name: github
+- icon:
+    name: github
   href: https://github.com/standy66
   text: '<div class="at">@</div>standy66'
-- name: telegram
+- icon:
+    name: telegram
   href: https://t.me/standy
   text: '<div class="at">@</div>standy'
 skills:
