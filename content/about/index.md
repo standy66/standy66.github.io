@@ -8,7 +8,7 @@ layout: about
 menu: main
 contacts:
 - icon:
-    fa: fa-earth-europe
+    fa: solid/earth-europe
   text: '<span>Cambridge, 🇬🇧</span>'
 - icon:
     name: email

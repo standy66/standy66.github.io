@@ -9,7 +9,7 @@
         {{ range .Params.contacts }}
         <li>
             {{ if isset .icon "name" }}{{ partial "svg.html" .icon }}{{ end }}
-            {{ if isset .icon "fa" }}<i class="fa-solid {{ .icon.fa }}"></i>{{ end }}
+            {{ if isset .icon "fa" }}{{ partial "fontawesome.html" .icon.fa }}{{ end }}
             {{ if isset . "href" }}<a href="{{- .href -}}">{{ end }}
             {{- .text | safeHTML -}}
             {{ if isset . "href" }}</a>{{ end }}</li>
