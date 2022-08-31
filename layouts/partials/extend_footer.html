@@ -1,0 +1,12 @@
+<script>
+    document.querySelectorAll(".print-button").forEach(button => button.onclick = function() {
+        let dark = document.body.className.includes("dark");
+        if (dark) {
+            document.body.classList.remove('dark');
+        }
+        window.print();
+        if (dark) {
+            document.body.classList.add('dark');
+        }
+    });
+</script>

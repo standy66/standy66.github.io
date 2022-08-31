@@ -6,6 +6,7 @@ author: ["Me", "You"]
 # type: page
 layout: about
 menu: main
+show_pdf_icon_in_header: true
 contacts:
 - icon:
     fa: solid/earth-europe
@@ -28,13 +29,17 @@ contacts:
   text: '<div class="at">@</div>standy'
 skills:
 - ML
-- Management
+- SDE Management
+- ML/Dev Lifecycle
+- DevTools
+- Perf optimization
+- K8s
+- Python
+- ASR
+- TTS
+- NLP
 - C++
 - Golang
-- Python
-- K8S
-- Perf optimization
-- NLP
-- IT Strategy
+- BigData
 
 ---

@@ -1,0 +1,8 @@
+#print-to-pdf svg {
+    height: 18px;
+}
+
+button#print-to-pdf {
+    font-size: 26px;
+    margin: auto 4px;
+}
