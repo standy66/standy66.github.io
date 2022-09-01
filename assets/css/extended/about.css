@@ -37,6 +37,24 @@
     }
 }
 
+
+.print-only-web-link {
+    font-size: 0.85em;
+    color: var(--secondary);
+    display: none;
+}
+
+.print-only-web-link a {
+    color: inherit;
+    border-bottom: 1px solid var(--secondary);
+}
+
+.print-only-web-link a:hover {
+    color: var(--primary);
+    border-bottom: 1px solid var(--primary);
+}
+
+
 @media print {
     :root {
         --theme: rgb(255, 255, 255);
@@ -63,6 +81,9 @@
     }
     nav.jump-to {
         display: none;
+    }
+    .print-only-web-link {
+        display: block;
     }
 }
 
