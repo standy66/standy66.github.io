@@ -15,7 +15,7 @@ params:
 
       This is my personal site. It is currently under construdttion.
 
-      Feel free to contact me by any means below.
+      Feel free to contact using any button below.
     imageUrl: "my_avatar.jpeg" # optional
     imageTitle: "This is what I look like"
     imageWidth: 160 # custom size
