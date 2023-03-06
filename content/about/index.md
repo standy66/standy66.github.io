@@ -1,7 +1,7 @@
 ---
 title: "About"
 date: 2022-04-27T22:55:15+03:00
-draft: false
+draft: true
 author: ["Me", "You"]
 # type: page
 layout: about
