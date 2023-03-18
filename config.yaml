@@ -6,32 +6,21 @@ googleAnalytics: G-C5RG2DYTWS
 params:
   profileMode:
     enabled: true
-    title: Hi!
-      
-    subtitle: |
-      My name is **Andrew Stepanov**.
-
-      I am an engineering manager with *first-hand experience* in ML / algorithms 🙌 🧠 💻
-
-      Feel free to contact using any button below.
-    imageUrl: "my_avatar.jpeg" # optional
-    imageTitle: "This is what I look like"
-    imageWidth: 160 # custom size
-    imageHeight: 160 # custom size
-#    buttons:
-#      - name: About me
-#        url: "/about"
+    title: Andrew Stepanov
+    subtitle: AI expert turned VC
+    imageUrl: "photo_2023-03-18 15.53.44.jpeg" # optional
+    imageWidth: 180 # custom size
+    imageHeight: 180 # custom size
   socialIcons:
     - name: email
       url: mailto:hi@standy.me
+    - name: linkedin
+      url: https://linkedin.com/in/standy66
     - name: telegram
       url: https://t.me/standy
     - name: github
       url: https://github.com/standy66
     - name: instagram
       url: https://instagram.com/astepanov95
-    - name: linkedin
-      url: https://linkedin.com/in/standy66
     - name: stackoverflow
       url: https://stackoverflow.com/users/1939748/standy
-
