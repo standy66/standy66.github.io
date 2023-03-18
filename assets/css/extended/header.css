@@ -6,3 +6,7 @@ button#print-to-pdf {
     font-size: 26px;
     margin: auto 4px;
 }
+
+header {
+    visibility: hidden;
+}
