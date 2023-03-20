@@ -5,6 +5,7 @@ theme: PaperMod
 googleAnalytics: G-C5RG2DYTWS
 params:
   disableThemeToggle: false
+  defaultTheme: light
   profileMode:
     enabled: true
     title: Andrew Stepanov
