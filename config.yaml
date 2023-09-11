@@ -9,7 +9,6 @@ params:
   profileMode:
     enabled: true
     title: Andrew Stepanov
-    subtitle: AI expert. Engineering Manager. Venture Capitalist.
     imageUrl: "photo_2023-03-18 15.53.44.jpeg" # optional
     imageWidth: 180 # custom size
     imageHeight: 180 # custom size
